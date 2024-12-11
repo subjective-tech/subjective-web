@@ -230,6 +230,39 @@ const LogoGrid = styled.div`
   flex-wrap: wrap;
 `;
 
+const MetricsSection = styled.section`
+  background: ${colors.background.primary};
+  padding: 4rem 2rem;
+  border-bottom: 1px solid ${colors.text.light}20;
+`;
+
+const MetricsGrid = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  text-align: center;
+`;
+
+const MetricItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const MetricNumber = styled.div`
+  font-size: 3rem;
+  font-weight: 700;
+  color: ${colors.primary};
+  margin-bottom: 0.5rem;
+`;
+
+const MetricLabel = styled.div`
+  color: ${colors.text.secondary};
+  font-size: 1.1rem;
+`;
+
 const Logo = styled.img`
   height: 40px;
   object-fit: contain;
@@ -304,6 +337,27 @@ function Home() {
           </LogoGrid>
         </LogoContainer>
       </LogoBar>
+
+      <MetricsSection>
+        <MetricsGrid>
+          <MetricItem>
+            <MetricNumber>500+</MetricNumber>
+            <MetricLabel>Clients Served</MetricLabel>
+          </MetricItem>
+          <MetricItem>
+            <MetricNumber>95%</MetricNumber>
+            <MetricLabel>Client Satisfaction</MetricLabel>
+          </MetricItem>
+          <MetricItem>
+            <MetricNumber>1000+</MetricNumber>
+            <MetricLabel>Projects Completed</MetricLabel>
+          </MetricItem>
+          <MetricItem>
+            <MetricNumber>24/7</MetricNumber>
+            <MetricLabel>Support Available</MetricLabel>
+          </MetricItem>
+        </MetricsGrid>
+      </MetricsSection>
 
       <Section bgColor="#f5f8ff">
         <ContentWrapper>
