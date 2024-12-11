@@ -6,21 +6,84 @@ const HomeContainer = styled.div`
 
 const Hero = styled.section`
   text-align: center;
-  padding: 4rem 0;
+  padding: 8rem 0;
   max-width: 1200px;
   margin: 0 auto;
+  background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
+`;
+
+const UpdateBadge = styled.div`
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #333;
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Subtitle = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #666;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+`;
+
+const PrimaryButton = styled.a`
+  background: #2d6ae0;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #1d5ad0;
+    transform: translateY(-2px);
+  }
+`;
+
+const SecondaryButton = styled.a`
+  background: transparent;
+  color: #2d6ae0;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #2d6ae0;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(45, 106, 224, 0.1);
+    transform: translateY(-2px);
+  }
+`;
+
+const Stats = styled.div`
+  font-size: 1.1rem;
+  color: #666;
 `;
 
 const LogoBar = styled.section`
