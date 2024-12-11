@@ -23,6 +23,44 @@ const Subtitle = styled.p`
   margin-bottom: 2rem;
 `;
 
+const LogoBar = styled.section`
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin: 0 auto;
+`;
+
+const LogoContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+`;
+
+const LogoTitle = styled.h3`
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+`;
+
+const LogoGrid = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+`;
+
+const Logo = styled.img`
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
 const Section = styled.section`
   display: flex;
   align-items: center;
@@ -72,6 +110,19 @@ function Home() {
         <Title>Welcome to Our Company</Title>
         <Subtitle>We deliver innovative solutions for your business needs</Subtitle>
       </Hero>
+
+      <LogoBar>
+        <LogoContainer>
+          <LogoTitle>Trusted by Industry Leaders</LogoTitle>
+          <LogoGrid>
+            <Logo src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" />
+            <Logo src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" />
+            <Logo src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" />
+            <Logo src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+            <Logo src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Apple_logo_grey.svg" alt="Apple" />
+          </LogoGrid>
+        </LogoContainer>
+      </LogoBar>
 
       <Section bgColor="#f5f8ff">
         <ContentWrapper>
