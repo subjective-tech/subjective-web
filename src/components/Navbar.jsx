@@ -1,6 +1,17 @@
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
+const Logo = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+`;
+
+const LogoImage = styled.img`
+  height: 40px;
+  width: auto;
+`;
+
 const Nav = styled.nav`
   background-color: #ffffff;
   padding: 1rem 2rem;
@@ -46,6 +57,9 @@ const AppButton = styled.a`
 function Navbar() {
   return (
     <Nav>
+      <Logo to="/">
+        <LogoImage src="/logo-white.svg" alt="Company Logo" />
+      </Logo>
       <NavList>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
