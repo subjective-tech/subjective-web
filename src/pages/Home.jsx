@@ -24,7 +24,7 @@ const Subtitle = styled.p`
 `;
 
 const LogoBar = styled.section`
-  background-color: #f8f9fa;
+  background-color: #2f3640;
   padding: 2rem 0;
   margin: 0 auto;
 `;
@@ -37,7 +37,7 @@ const LogoContainer = styled.div`
 
 const LogoTitle = styled.h3`
   text-align: center;
-  color: #666;
+  color: #ffffff;
   font-size: 1.1rem;
   margin-bottom: 2rem;
 `;
@@ -53,7 +53,7 @@ const LogoGrid = styled.div`
 const Logo = styled.img`
   height: 40px;
   object-fit: contain;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: opacity 0.3s;
 
   &:hover {
